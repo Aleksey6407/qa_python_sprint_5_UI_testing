@@ -21,7 +21,6 @@ class TestRegistrationPage:
 
         assert driver.current_url == URLS.AUTH_PAGE_URL and login_btn_displayed
 
-
     def test_registration_incorrect_password_check_error(self, driver):
         """Проверка регистрации пользователя с некорректным паролем (менее 6 символов)"""
         driver = driver
