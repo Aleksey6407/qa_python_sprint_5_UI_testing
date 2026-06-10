@@ -19,7 +19,7 @@ class TestRegistrationPage:
         WebDriverWait(driver, 5).until(EC.visibility_of_element_located(AuthPageLocators.login_account_btn))
         login_btn_displayed = driver.find_element(*AuthPageLocators.login_account_btn).is_displayed()
 
-        assert driver.current_url == URLS.AUTH_PAGE_URL and login_btn_displayed
+        assert driver.current_url == URLS.AUTH_PAGE_URL
 
 
     def test_registration_incorrect_password_check_error(self, driver):
